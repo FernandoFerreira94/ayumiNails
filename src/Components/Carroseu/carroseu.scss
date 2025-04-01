@@ -1,0 +1,47 @@
+/* Container dos cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; /* Espaço entre os cards */
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+}
+
+/* Cada card */
+.card {
+  width: 300px; /* Largura do card */
+  height: 200px; /* Altura do card */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: all 0.3s ease; /* Animações */
+}
+
+/* Imagem dentro do card */
+.card-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover; /* Ajusta a imagem dentro do card */
+  transition: all 0.3s ease; /* Transição suave para a opacidade */
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* Quando o mouse estiver sobre uma imagem específica */
+.card-container .card-image:hover {
+  opacity: 1; /* Deixa a imagem alvo opaca */
+}
+
+/* Reduz a opacidade das outras imagens */
+.card-container:hover .card-image {
+  opacity: 0.5; /* Define opacidade reduzida */
+}
+
+/* Exclui a imagem que está sendo "hovered" */
+.card-container .card-image:hover {
+  opacity: 1; /* Mantém a opacidade da imagem com hover */
+  transform: scale(1.15);
+}
