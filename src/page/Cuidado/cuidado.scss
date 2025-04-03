@@ -1,0 +1,16 @@
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 50px;
+  width: 60%;
+
+  li {
+    width: 100%;
+    span {
+      font-size: 17px;
+      color: black;
+      letter-spacing: 0.5px;
+    }
+  }
+}

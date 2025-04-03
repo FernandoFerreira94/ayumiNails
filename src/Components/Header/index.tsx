@@ -18,8 +18,8 @@ export default function Header() {
           <a className="nav-url" href="tabela">
             Tabela
           </a>
-          <a className="nav-url" href="contato">
-            Contato
+          <a className="nav-url" href="sobre">
+            Sobre
           </a>
           <a className="nav-url" href="cuidado">
             Cuidado

@@ -1,14 +1,11 @@
-import "./nails.scss";
 import Footer from "../../Components/Footer";
 import Title from "../../Components/Title";
 
-export default function Nail() {
+export default function Sobre() {
   return (
     <>
       <div className="tabela">
-        <Title title="Nails" />
-
-        <div></div>
+        <Title title="Sobre" />
       </div>
       <Footer />
     </>

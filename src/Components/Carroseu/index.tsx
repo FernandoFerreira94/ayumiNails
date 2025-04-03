@@ -8,32 +8,32 @@ import "./carroseu.scss";
 export default function Carroseu() {
   return (
     <section>
-      <div className="content">
-        <div className="card-container">
-          <div className="card">
-            <img src={foto1} alt="Foto 1" className="card-image" />
-            <h4>style</h4>
-          </div>
-          <div className="card">
-            <img src={foto2} alt="Foto 2" className="card-image" />
-            <h4>style</h4>
-          </div>
-          <div className="card">
-            <img src={foto3} alt="Foto 3" className="card-image" />
-            <h4>style</h4>
-          </div>
-          <div className="card">
-            <img src={foto4} alt="Foto 4" className="card-image" />
-            <h4>style</h4>
-          </div>
-          <div className="card">
-            <img src={foto5} alt="Foto 5" className="card-image" />
-            <h4>style</h4>
-          </div>
+      <div className="card-container">
+        <div className="card">
+          <img src={foto1} alt="Foto 1" className="card-image" />
+          <h4>style</h4>
         </div>
+        <div className="card">
+          <img src={foto2} alt="Foto 2" className="card-image" />
+          <h4>style</h4>
+        </div>
+        <div className="card">
+          <img src={foto3} alt="Foto 3" className="card-image" />
+          <h4>style</h4>
+        </div>
+        <div className="card">
+          <img src={foto4} alt="Foto 4" className="card-image" />
+          <h4>style</h4>
+        </div>
+        <div className="card">
+          <img src={foto5} alt="Foto 5" className="card-image" />
+          <h4>style</h4>
+        </div>
+      </div>
+      <div className="content">
         <span className="card-text">
-          "Bem-vindo ao universo de design de unhas da Fernanda Ayumi!
-          Transformamos sua criatividade em arte e cuidado para suas mãos."
+          "Bem-vindo ao universo de design de unhas! Transformamos sua
+          criatividade em arte e cuidado para suas mãos."
         </span>
       </div>
     </section>

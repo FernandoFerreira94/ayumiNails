@@ -6,21 +6,18 @@ $font: "Montserrat";
 .content {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
+  gap: 30px;
+  padding: 20px;
 }
+
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px; /* Espaço entre os cards */
-  background-color: $fundo;
   margin: 0 auto;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  background-color: transparent;
 }
 
 /* Cada card */
@@ -32,6 +29,7 @@ $font: "Montserrat";
   display: flex;
   text-align: center;
   justify-content: center;
+
   h4 {
     font-size: 22px;
     color: $secondary;
@@ -50,7 +48,7 @@ $font: "Montserrat";
 
 /* Reduz a opacidade das outras imagens */
 .card-container:hover .card {
-  opacity: 0.5; /* Define opacidade reduzida */
+  opacity: 0.5;
 }
 
 /* Exclui a imagem que está sendo "hovered" */
@@ -64,4 +62,7 @@ $font: "Montserrat";
   font-size: 18px;
   letter-spacing: 2px;
   font-family: "Times New Roman", Times, serif;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
 }

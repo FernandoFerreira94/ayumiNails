@@ -1,13 +1,14 @@
 import Header from "./Components/Header";
-import Logo from "./Components/Logo";
 import AppRouter from "./router";
+import { ToastContainer } from "react-toastify";
 
 export default function App() {
   return (
     <>
       <Header />
-      <Logo />
+
       <AppRouter />
+      <ToastContainer autoClose={2000} />
     </>
   );
 }
