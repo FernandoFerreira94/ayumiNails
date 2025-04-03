@@ -9,11 +9,21 @@ export default function Header() {
           <img src={Logo} alt="Logo" />
         </div>
         <div className="menu">
-          <a href="#">Home</a>
-          <a href="#">Nails</a>
-          <a href="#">Tabela</a>
-          <a href="#">Contato</a>
-          <a href="#">Cuidado</a>
+          <a className="nav-url" href="/">
+            Home
+          </a>
+          <a className="nav-url" href="nails">
+            Nails
+          </a>
+          <a className="nav-url" href="tabela">
+            Tabela
+          </a>
+          <a className="nav-url" href="contato">
+            Contato
+          </a>
+          <a className="nav-url" href="cuidado">
+            Cuidado
+          </a>
         </div>
       </nav>
     </header>

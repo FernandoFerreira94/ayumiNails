@@ -1,0 +1,56 @@
+$primary: #d9965b; // Cor primária personalizada
+$secondary: #595959; // Cor primária personalizada
+$fundo: #ebeef2;
+$font: "Montserrat";
+
+.containe {
+  margin-top: 80px;
+  width: 100%;
+  background-color: $fundo;
+  display: flex;
+  margin-top: 60px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+
+  bottom: 0;
+  .footer-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    cursor: pointer;
+    gap: 15px;
+
+    span {
+      color: $secondary;
+      transition: all 0.2s;
+
+      &:hover {
+        color: black;
+      }
+    }
+    svg {
+      font-size: 25px;
+    }
+
+    img {
+      width: 150px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .endereco {
+    display: flex;
+    gap: 15px;
+    p {
+      color: $secondary;
+      transition: all 0.2s;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

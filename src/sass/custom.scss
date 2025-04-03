@@ -2,6 +2,7 @@ $primary: #d9965b; // Cor primária personalizada
 $secondary: #595959; // Cor primária personalizada
 $fundo: #ebeef2;
 $font-family-base: "Roboto", sans-serif; // Fonte personalizada
+$font: "Montserrat";
 
 * {
   padding: 0;
@@ -10,40 +11,26 @@ $font-family-base: "Roboto", sans-serif; // Fonte personalizada
   outline: none;
 }
 
+/* Para outros navegadores, como Firefox */
+html {
+  scrollbar-width: none; /* Oculta a barra de rolagem */
+}
+
 body {
+  margin-top: 70px;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
   background-image: url("../assets/texturamarmore.webp");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200%;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem */
 }
 
 a {
   text-decoration: none;
-  color: $secondary; // Variável de cor para o texto
-  font-size: 17px;
-  transition: all 0.5s; // Transição suave
-  font-weight: 500;
-
-  // Adiciona um pseudo-elemento para a linha embaixo
-  position: relative;
-
-  &:hover {
-    color: $primary; // Cor ao passar o mouse
-  }
-
-  &::after {
-    content: ""; // Elemento vazio usado como linha
-    position: absolute;
-    left: 0;
-    bottom: -2px; // Ajuste para posicionar a linha abaixo do texto
-    width: 0%; // Inicialmente, a linha é invisível
-    height: 2px; // Espessura da linha
-    background-color: $primary; // Cor da linha
-    transition: width 0.5s ease; // Faz a linha crescer suavemente
-  }
-
-  &:hover::after {
-    width: 100%; // Expande a linha ao passar o mouse
-  }
+  color: $secondary;
 }

@@ -1,0 +1,27 @@
+$primary: #d9965b; // Cor primária personalizada
+$secondary: #595959; // Cor primária personalizada
+$fundo: #ebeef2;
+$font: "Montserrat";
+
+.page-error {
+  text-align: center;
+  margin: 8px;
+  margin-top: 80px;
+}
+
+.back {
+  margin-top: 20px;
+  padding: 8px 18px;
+  border: 0;
+  font-weight: 600;
+  background-color: $primary;
+  border-radius: 5px;
+  font-size: 18px;
+  color: $secondary;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    color: black;
+  }
+}

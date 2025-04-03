@@ -1,10 +1,18 @@
+$primary: #d9965b; // Cor primária personalizada
+$secondary: #595959; // Cor primária personalizada
+$fundo: #ebeef2;
+$font: "Montserrat";
+
 header {
   width: 100%;
   height: 70px;
   background-color: #fff;
   border-radius: 0 0 5px 5px;
-  box-shadow: 0 0 30px rgb(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
   display: flex;
+  position: fixed;
+  z-index: 99;
+  top: 0;
 }
 
 nav {
@@ -31,7 +39,34 @@ nav {
   display: flex;
   gap: 30px;
   cursor: pointer;
+}
 
-  a {
+.nav-url {
+  text-decoration: none;
+  color: black; // Variável de cor para o texto
+  font-size: 16px;
+  transition: all 0.5s; // Transição suave
+  font-weight: 500;
+  font-family: $font;
+  // Adiciona um pseudo-elemento para a linha embaixo
+  position: relative;
+
+  &:hover {
+    color: $primary; // Cor ao passar o mouse
+  }
+
+  &::after {
+    content: ""; // Elemento vazio usado como linha
+    position: absolute;
+    left: 0;
+    bottom: -2px; // Ajuste para posicionar a linha abaixo do texto
+    width: 0%; // Inicialmente, a linha é invisível
+    height: 2px; // Espessura da linha
+    background-color: $primary; // Cor da linha
+    transition: width 0.5s ease; // Faz a linha crescer suavemente
+  }
+
+  &:hover::after {
+    width: 100%; // Expande a linha ao passar o mouse
   }
 }
