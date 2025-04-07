@@ -5,7 +5,6 @@ $fundo: #ebeef2;
 .sobre {
   margin-top: 50px;
   display: flex;
-
   width: 100%;
 
   div {
@@ -18,7 +17,7 @@ $fundo: #ebeef2;
     img {
       border: 2px solid $secondary;
       border-radius: 40px;
-      width: 50%;
+      width: 500px;
       filter: drop-shadow(0 0 5px black);
       padding: 20px;
       background-color: #ffffff0f;
@@ -28,11 +27,49 @@ $fundo: #ebeef2;
     padding: 20px 70px;
     margin-right: 50px;
     p {
-      font-size: 17px;
+      font-size: 18px;
       color: #595959;
       font-weight: 600;
       letter-spacing: 1px;
       line-height: 28px;
+      text-align: justify;
     }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .sobre {
+    gap: 10px;
+    div {
+      img {
+        width: 450px;
+      }
+    }
+
+    .sobre-text {
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .sobre {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .sobre-text {
+      width: 90%;
+      padding: 10px;
+      p {
+        font-size: 19px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sobre div img {
+    width: 400px;
   }
 }

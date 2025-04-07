@@ -3,11 +3,11 @@ $secondary: #595959; // Cor primária personalizada
 $fundo: #ebeef2;
 
 .tabela {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
 
   ul {
     width: 50%;
@@ -48,9 +48,18 @@ $fundo: #ebeef2;
   }
 
   p {
+    text-align: center;
     font-size: 18px;
     color: $secondary;
     font-weight: bold;
     font-style: italic;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tabela {
+    ul {
+      width: 100%;
+    }
   }
 }

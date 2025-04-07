@@ -11,19 +11,20 @@
 }
 
 .card-nail {
-  height: 250px;
+  flex-wrap: wrap;
+  width: 100%;
   border-radius: 10px;
   display: flex;
-  gap: 40px;
-  margin: 10px 40px 20px 40px;
-  position: relative;
   transition: all 0.5 ease-in;
+  padding: 0 40px;
 }
 
 .card-nail img {
-  width: 100%;
+  width: 14%;
+  height: 350px;
+  margin: 0 auto;
+  object-fit: cover;
   border-radius: 10px;
-  height: 100%;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
@@ -41,4 +42,32 @@
   transform: scale(1.7);
   z-index: 9;
   filter: blur(0);
+}
+
+@media screen and (max-width: 1250px) {
+  .card-nail {
+    padding: 0;
+  }
+  .card-nail img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-nail {
+    gap: 20px;
+  }
+  .card-nail img {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-nail {
+    gap: 10px;
+    row-gap: 20px;
+  }
+  .card-nail img {
+    width: 45%;
+  }
 }

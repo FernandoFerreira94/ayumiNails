@@ -68,3 +68,30 @@ $font: "Montserrat";
   text-align: center;
   margin-top: 40px;
 }
+
+@media screen and (max-width: 1200px) {
+  .card-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%; /* Ajusta a largura para caberem dois cards lado a lado */
+    margin-bottom: 20px; /* Espaço entre linhas de cards, se necessário */
+    h4 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 70%;
+  }
+}

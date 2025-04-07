@@ -5,3 +5,10 @@
   margin-left: 40px;
   transition: all 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 800px) {
+  .font-nails {
+    font-size: 26px;
+    text-align: center;
+  }
+}

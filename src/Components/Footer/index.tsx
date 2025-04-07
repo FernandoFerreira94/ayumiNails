@@ -42,7 +42,7 @@ export default function Footer() {
           </section>
         </section>
         <section className="footer-container">
-          <h5> Direitos autorais </h5>
+          <h4> Direitos autorais </h4>
           <span>© 2025 Fernanda Ayumi. Todos os direitos reservados.</span>
         </section>
       </div>

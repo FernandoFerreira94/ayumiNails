@@ -6,7 +6,6 @@ import quadrada03 from "../../assets/nails/quadrada/quadrada3.jpg";
 import quadrada04 from "../../assets/nails/quadrada/quadrada4.jpg";
 import quadrada05 from "../../assets/nails/quadrada/quadrada5.jpg";
 import quadrada06 from "../../assets/nails/quadrada/quadrada6.jpg";
-import quadrada07 from "../../assets/nails/quadrada/quadrada7.jpg";
 
 export function Quadrada() {
   return (
@@ -19,7 +18,6 @@ export function Quadrada() {
         <img src={quadrada04} alt="" />
         <img src={quadrada05} alt="" />
         <img src={quadrada06} alt="" />
-        <img src={quadrada07} alt="" />
       </div>
     </div>
   );
@@ -31,7 +29,6 @@ import almond03 from "../../assets/nails/almond/almond3.jpg";
 import almond04 from "../../assets/nails/almond/almond4.jpg";
 import almond05 from "../../assets/nails/almond/almond5.jpg";
 import almond06 from "../../assets/nails/almond/almond6.jpg";
-import almond07 from "../../assets/nails/almond/almond7.jpg";
 
 export function Almond() {
   return (
@@ -44,7 +41,6 @@ export function Almond() {
         <img src={almond04} alt="" />
         <img src={almond05} alt="" />
         <img src={almond06} alt="" />
-        <img src={almond07} alt="" />
       </div>
     </div>
   );
@@ -56,7 +52,6 @@ import stiletto03 from "../../assets/nails/stiletto/stiletto3.jpg";
 import stiletto04 from "../../assets/nails/stiletto/stiletto4.jpg";
 import stiletto05 from "../../assets/nails/stiletto/stiletto5.jpg";
 import stiletto06 from "../../assets/nails/stiletto/stiletto6.jpg";
-import stiletto07 from "../../assets/nails/stiletto/stiletto7.jpg";
 
 export function Stiletto() {
   return (
@@ -69,7 +64,6 @@ export function Stiletto() {
         <img src={stiletto04} alt="" />
         <img src={stiletto05} alt="" />
         <img src={stiletto06} alt="" />
-        <img src={stiletto07} alt="" />
       </div>
     </div>
   );
