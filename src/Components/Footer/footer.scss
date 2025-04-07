@@ -17,13 +17,14 @@ $font: "Montserrat";
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     cursor: pointer;
     gap: 15px;
 
     span {
       color: $secondary;
       transition: all 0.2s;
+      text-align: center;
 
       &:hover {
         color: black;
@@ -57,25 +58,15 @@ $font: "Montserrat";
 }
 
 @media screen and (max-width: 800px) {
-  .endereco a {
-    flex-direction: column;
-  }
-
-  .containe {
-    gap: 0;
-    justify-content: center;
-    margin-bottom: auto;
-  }
-
   .footer-container {
-    display: flex;
-    margin: 0 auto;
     h4 {
+      width: 100%;
       font-size: 18px;
       text-align: center;
     }
 
     a {
+      width: 100%;
       display: flex;
       flex-direction: column;
       font-size: 14px;
@@ -88,39 +79,6 @@ $font: "Montserrat";
 
     img {
       display: none;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .containe {
-    padding: 10px 0;
-  }
-
-  .footer-container {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    cursor: pointer;
-    gap: 15px;
-
-    span {
-      color: $secondary;
-      transition: all 0.2s;
-
-      &:hover {
-        color: black;
-      }
-    }
-    svg {
-      font-size: 25px;
-    }
-
-    img {
-      width: 90px;
-      object-fit: cover;
-      border-radius: 20px;
     }
   }
 }
