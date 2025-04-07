@@ -80,10 +80,10 @@ nav {
   }
 
   .nav-url {
-    font-size: 17px;
+    font-size: 15px;
   }
   .menu {
-    gap: 15px;
+    gap: 10px;
   }
 
   .nav-img img {
@@ -93,7 +93,7 @@ nav {
 
 @media screen and (max-width: 500px) {
   nav {
-    gap: 20px;
+    gap: 15px;
   }
 
   .menu {
