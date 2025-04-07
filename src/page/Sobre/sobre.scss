@@ -1,0 +1,38 @@
+$primary: #d9965b; // Cor primária personalizada
+$secondary: #595959; // Cor primária personalizada
+$fundo: #ebeef2;
+
+.sobre {
+  margin-top: 50px;
+  display: flex;
+
+  width: 100%;
+
+  div {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border: 2px solid $secondary;
+      border-radius: 40px;
+      width: 50%;
+      filter: drop-shadow(0 0 5px black);
+      padding: 20px;
+      background-color: #ffffff0f;
+    }
+  }
+  .sobre-text {
+    padding: 20px 70px;
+    margin-right: 50px;
+    p {
+      font-size: 17px;
+      color: #595959;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 28px;
+    }
+  }
+}

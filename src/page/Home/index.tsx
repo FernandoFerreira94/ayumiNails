@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     function load() {
-      toast("Olá seja bem vinda 😊");
+      toast("Olá seja bem vinda 💅");
     }
     load();
   }, []);

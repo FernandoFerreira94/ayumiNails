@@ -1,17 +1,20 @@
 import "./header.scss";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logoAymum,i.png";
 
 export default function Header() {
   return (
     <header>
       <nav>
         <div className="nav-img">
-          <img src={Logo} alt="Logo" />
+          <a href="/">
+            <img src={Logo} alt="Logo" />
+          </a>
         </div>
         <div className="menu">
           <a className="nav-url" href="/">
             Home
           </a>
+
           <a className="nav-url" href="nails">
             Nails
           </a>

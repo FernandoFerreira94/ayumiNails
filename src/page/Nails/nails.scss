@@ -2,3 +2,43 @@
   width: 100%;
   display: flex;
 }
+.nail {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-nail {
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  gap: 40px;
+  margin: 10px 40px 20px 40px;
+  position: relative;
+  transition: all 0.5 ease-in;
+}
+
+.card-nail img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  opacity: 1; /* Opacidade inicial */
+  filter: contrast(120%);
+}
+
+.card-nail:hover img {
+  opacity: 0.5; /* Quando o mouse estiver sobre o container, todas as imagens terão opacidade reduzida */
+  filter: blur(1px);
+}
+
+.card-nail img:hover {
+  opacity: 1; /* A imagem que está sendo destacada no hover volta a ter opacidade total */
+  transform: scale(1.7);
+  z-index: 9;
+  filter: blur(0);
+}
