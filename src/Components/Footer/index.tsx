@@ -15,11 +15,19 @@ export default function Footer() {
             href="https://api.whatsapp.com/message/2EVFOTRUORH7B1?autoload=1&app_absent=0"
             target="_blank"
           >
-            <SiWhatsapp color="#075e54" /> <span>{wahtsap}</span>
+            <span>
+              {" "}
+              <SiWhatsapp color="#075e54" />{" "}
+            </span>{" "}
+            <span>{wahtsap}</span>
           </a>
 
           <a href="https://www.instagram.com/ayumifernails/" target="_blank">
-            <SiInstagram /> <span>{instagram}</span>
+            <span>
+              {" "}
+              <SiInstagram />
+            </span>{" "}
+            <span>{instagram}</span>
           </a>
         </section>
 
