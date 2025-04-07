@@ -94,4 +94,14 @@ $font: "Montserrat";
   .card {
     width: 70%;
   }
+
+  .card-container:hover .card {
+    opacity: 1;
+  }
+
+  /* Exclui a imagem que está sendo "hovered" */
+  .card-container .card:hover {
+    opacity: 1; /* Mantém a opacidade da imagem com hover */
+    transform: scale(1);
+  }
 }

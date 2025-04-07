@@ -14,3 +14,15 @@ ol {
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  ol {
+    width: 90%;
+
+    li {
+      span {
+        font-size: 19px;
+      }
+    }
+  }
+}
