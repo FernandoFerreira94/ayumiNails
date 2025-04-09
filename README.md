@@ -1,54 +1,26 @@
-# React + TypeScript + Vite
+# Ayumi Nails
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um portfólio encantador para uma profissional de Nail Art, desenvolvido com React.js, Typescript, Tailwind CSS, Toastify e muito mais! Este projeto é uma vitrine digital de talento e profissionalismo, permitindo que os visitantes explorem serviços, preços, dicas de cuidados e muito mais.
 
-Currently, two official plugins are available:
+## 💅 Funcionalidades Principais
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home**: Página principal com imagens demonstrativas de unhas e modelos.
+- **Página Nails**: Mostra os serviços de unhas com imagens detalhadas.
+- **Tabela de Preços**: Exibe os valores dos serviços oferecidos.
+- **Página Sobre**: Uma biografia inspiradora sobre a profissional.
+- **Página Cuidados**: Dicas úteis para cuidados com as unhas.
+- **Header e Footer**: Navegação intuitiva e rodapé com contato (WhatsApp, Instagram), endereço com integração ao Google Maps, e direitos autorais.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React.js**: Framework JavaScript para criação de interfaces interativas.
+- **Tailwind CSS**: Estilização eficiente e responsiva.
+- **Toastify**: Notificações visuais atraentes.
+- **React Router**: Navegação entre páginas.
+- **useEffect**: Gerenciamento de ciclos de vida dos componentes.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Como Executar Localmente
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/ayumi-nails.git
